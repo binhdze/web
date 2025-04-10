@@ -1,0 +1,32 @@
+/* Căn giữa toàn bộ nội dung của trang */
+body, #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+/* Đảm bảo rằng các phần tử bên trong container cũng được căn giữa */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+/* Đảm bảo rằng footer nằm ở dưới cùng */
+footer {
+    margin-top: auto;
+}
+
+/* Căn giữa các phần tử trong menu, nếu cần */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

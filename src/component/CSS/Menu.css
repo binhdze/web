@@ -1,0 +1,39 @@
+/* Menu.css */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: #0d6efd !important;
+    background-color: #f0f8ff;
+}
+
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+}

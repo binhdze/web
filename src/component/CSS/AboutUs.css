@@ -1,0 +1,72 @@
+/* --- Animation --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-in-out both;
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in-out both;
+}
+
+/* --- Ảnh --- */
+.img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.03);
+}
+
+/* --- Tiêu đề chính --- */
+h1.text-uppercase {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* --- Section header --- */
+section h2 {
+    color: #1f3a93;
+    border-left: 4px solid #1f3a93;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Tiêu đề nhỏ --- */
+h4 {
+    color: #2c3e50;
+}
+
+/* --- Đoạn kết --- */
+.text-danger {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* --- Responsive text block --- */
+p {
+    line-height: 1.6;
+}
